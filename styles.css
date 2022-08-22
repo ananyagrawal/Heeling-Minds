@@ -1,0 +1,864 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.navbar {
+  height: 13vh;
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  background: #fafafa;
+  background: hidden;
+}
+.logo_img {
+  height: 12vh;
+  width: auto;
+  position: absolute;
+  /* top:1.5vh; */
+  left: 2vw;
+}
+.navbar ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  width: 100%;
+  justify-content: end;
+  align-items: center;
+}
+/* adding */
+.navbar a {
+  text-decoration: none;
+  color: #26ace2;
+}
+.navbar li {
+  margin-left: 5vw;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.rowing a:hover {
+  color: black;
+}
+.last_link {
+  margin-right: 5vw;
+}
+
+/* front section of the website */
+.front_img {
+  height: 99vh;
+  width: 98.7vw;
+}
+.front_quote {
+  position: absolute;
+  top: 18vh;
+  color: #323232;
+  font-weight: bolder;
+  font-size: 2.6rem;
+  width: 36vw;
+  font-family: Cormorant;
+  background-color: rgba(135, 206, 235, 0.5);
+  border-radius: 10px;
+  border: none;
+  padding: 20px;
+}
+.plans_cont {
+  /* border-top:1px solid black;
+    border-bottom:1px solid black;  */
+  background: #f9ebdf;
+  height: 70vh;
+}
+.pricing {
+  margin-bottom: 5vh;
+  display: flex;
+  justify-content: space-around;
+}
+.box {
+  width: 20%;
+  height: 55vh;
+  border: 1px solid black;
+  border-radius: 10px;
+  /* padding:20px; */
+  box-shadow: 0px 4px 36px 0px rgba(0, 0, 0, 0.32);
+}
+.silver {
+  background-color: silver;
+}
+.gold {
+  background-color: #ffd700;
+}
+.plattinum {
+  background-color: lightblue;
+}
+.heading {
+  border-bottom: 1px solid black;
+  height: 16%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  font-weight: bold;
+  font-weight: 3rem;
+}
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border:1px solid yellow; */
+}
+.price {
+  font-size: 5vh;
+}
+.expect_info {
+  /* border:1px solid purple; */
+  text-align: center;
+  font-size: medium;
+}
+.expect {
+  font-weight: bold;
+}
+.margin_top {
+  margin-top: 3vh;
+}
+.margin_top_less {
+  margin-top: 1vh;
+}
+.small {
+  font-size: 5vh;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 5vh;
+  /* margin-top:5vh; */
+  font-weight: bolder;
+}
+.btn {
+  margin-top: 5vh;
+  width: 40%;
+  height: 5.5vh;
+  border-radius: 10px;
+  background-color: #0bd185;
+  border: 1px solid #0bd185;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn:hover {
+  background: rgba(211, 211, 211, 0.473);
+  color: #0bd185;
+  font-weight: bold;
+}
+
+/* adding */
+.bolding {
+  font-weight: bold;
+}
+
+.articles {
+  /* border-top:1px solid black;
+    border-bottom:1px solid black; */
+  background: #f9ebdf;
+}
+.articles_info {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.types {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+.types_name {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.active {
+  background-color: lightgray;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.types_name:hover {
+  background-color: lightgray;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.hidden {
+  display: none;
+}
+
+.art {
+  border: 1px solid black;
+  width: 20%;
+  height: 50vh;
+  border-radius: 10px;
+  box-shadow: 0px 4px 36px 0px rgba(0, 0, 0, 0.32);
+}
+.art-head {
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  /* height: 10%; */
+}
+.art-cont {
+  /* border:1px solid red; */
+  /* height:100%; */
+  margin-top: 2vh;
+  /* text-align: center; */
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+/* webinar */
+.webinar_links {
+  text-decoration: none;
+  color: black;
+}
+
+.webinar-preview:hover {
+  transform: translateY(-20px);
+}
+.webinar-grid {
+  padding-left: 5%;
+  padding-right: 5%;
+  display: grid;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 28px;
+}
+.webinar-preview {
+  box-shadow: 0px 4px 36px 0px rgba(0, 0, 0, 0.32);
+  transition: 0.5s;
+}
+.webinar-picture {
+  position: relative;
+  margin-bottom: 12px;
+}
+.web-pic {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+.webinar-info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+.date {
+  font-size: 12px;
+  height: 14px;
+  color: rgb(96, 96, 96);
+}
+.title {
+  margin-top: 4px;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.button-webinar-center {
+  text-align: center;
+}
+.webinar-button {
+  background-color: lightskyblue;
+  border: none;
+  color: white;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+.webinar {
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+}
+
+/* about us */
+.main_form {
+  width: 100%;
+  height: 100vh;
+  /* border:2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148907305.jpg?w=2000");
+  background-size: cover;
+}
+
+.form_fields {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
+  height: 60%;
+  width: 50%;
+  padding: 20px;
+  border-radius: 30px;
+  color: white;
+}
+
+.form_fields label {
+  font-size: 25px;
+}
+
+.form_fields input {
+  width: 15em;
+  height: 1.5em;
+  margin-left: 10px;
+  border-radius: 10px;
+  padding: 5px;
+}
+.form_fields select {
+  width: 15em;
+  height: 2.5em;
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+#submit_bt {
+  font-size: 25px;
+  width: 5em;
+  margin-left: 80%;
+  border: none;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.7s;
+}
+
+#submit_bt:hover {
+  font-size: 180%;
+}
+
+@media (max-width: 1311px) {
+  #submit_bt {
+    font-size: 1em;
+  }
+}
+
+.about_us {
+  /* width:100vw; */
+  /* height:100vh; */
+  display: flex;
+  flex-direction: row;
+  /* border:2px solid black; */
+}
+
+.about_us_1 {
+  /* height:100%; */
+  width: 30%;
+  /* background-color: aquamarine; */
+  /* border:2px solid red; */
+}
+
+.about_us_1 img {
+  height: 92%;
+}
+
+#heading {
+  text-align: center;
+  font-size: 50px;
+  /* text-decoration: underline; */
+  font-family: cormorant infant;
+  margin: 20px 0px 20px 0px;
+  color: black;
+}
+
+#para::first-letter {
+  font-size: 100px;
+  float: left;
+  line-height: 0.5;
+  margin: 15px 15px 10px 0;
+}
+
+#para {
+  font-size: 25px;
+  font-family: cormorant infant;
+}
+.about_us_2 {
+  height: 77vh;
+  width: 100%;
+  color: black;
+  /* background-color: beige; */
+  /* border:2px solid magenta; */
+  background: url("https://img.freepik.com/free-vector/low-poly-white-background-design_1017-33204.jpg?w=1380&t=st=1660822011~exp=1660822611~hmac=9fe3b2720b1a3654b37de1dfbf91cce578fea6274f60e98c6f8012b065b2683e");
+  background-size: cover;
+}
+
+.testimonials {
+  /* background-color: cyan; */
+  height: 100vh;
+  /* width:100vw;; */
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+  background-image: url("https://innerchange.com.au/wp-content/uploads/2017/12/Teal-geometric-4k-wallpaper-1440x900.jpg");
+  background-size: cover;
+}
+
+.testimonials h2 {
+  /* margin-top:10px; */
+  font-size: 60px;
+  color: white;
+  font-family: cormorant infant;
+}
+.content1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 40px;
+  /* border:2px solid black; */
+  padding: 30px;
+  height: 60%;
+  width: 70%;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 2em auto;
+}
+
+.test1 {
+  /* border:2px solid black; */
+  width: 20em;
+
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+}
+.test1 p {
+  font-family: cormorant infant;
+  font-size: 30px;
+}
+
+.test2 {
+  /* border:2px solid magenta; */
+  width: 30em;
+  /* height:100%; */
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  /* overflow:scroll; */
+}
+
+.test2 p {
+  font-family: cormorant infant;
+  font-size: 30px;
+}
+
+.compiled {
+  display: flex;
+  flex-direction: column;
+}
+
+#book {
+  margin: 0.5em;
+  font-family: cormorant infant;
+  font-size: 60px;
+}
+
+/* footer of the website*/
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 100%;
+}
+footer {
+  font-family: "Roboto", sans-serif;
+  padding-top: 30px;
+  background-color: antiquewhite;
+  color: black;
+}
+.footer-container-grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 6%;
+  padding-right: 6%;
+  flex-wrap: wrap;
+}
+.footer-column {
+  padding-left: 6%;
+  display: flex;
+  flex-flow: column;
+}
+.footer-title {
+  font-size: 28px;
+}
+.subnews-head {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.copyright {
+  padding-left: 6%;
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+.list {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.list a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #2c2929;
+  /* font-weight: */
+}
+.list li {
+  padding-top: 12px;
+}
+.footer-email-input {
+  border: none;
+  padding: 5px 5px 5px 5px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+#email-button {
+  margin-top: 8px;
+  margin-bottom: 18px;
+  border: none;
+  padding: 5px 5px 5px 5px;
+  border-radius: 3px;
+  color: white;
+  background-color: rgb(177, 45, 45);
+}
+.list a:hover {
+  color: red;
+}
+
+/* responsive webinar */
+@media (max-width: 500px) {
+  .webinar-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 501px) and (max-width: 880px) {
+  .webinar-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1130px) {
+  .webinar-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* responsive footer done without media */
+
+/* responsive front screen of the website */
+@media (min-width: 501px) and (max-width: 700px) {
+  .front_quote {
+    text-align: center;
+    width: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+@media (max-width: 500px) {
+  .front_quote {
+    text-align: center;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .front_img {
+    height: 400px;
+  }
+}
+
+/* Responsive aboutUs,Testimonials,Book a session,Articles,Pricing Section of the website */
+/*  @media (max-width:1500px){
+    .types li{
+        display:none;
+    }
+ 
+}  */
+
+@media (max-width: 820px) {
+  .box {
+    font-size: 1rem;
+    width: 25%;
+  }
+  .art {
+    width: 25%;
+  }
+
+  .about_us_2 {
+    overflow: scroll;
+    width: 100%;
+  }
+  .testimonials h2,
+  #book {
+    font-size: 40px;
+  }
+  .test1 p,
+  .test2 p {
+    font-size: 20px;
+  }
+
+  .about_us {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .margin_top {
+    margin-top: 2vh;
+  }
+  #para {
+    font-size: 20px;
+    padding: 30px;
+  }
+
+  .form_fields {
+    width: 80%;
+    height: 70%;
+  }
+  .form_fields label {
+    font-size: 20px;
+  }
+  .types li {
+    display: none;
+  }
+
+  #submit_bt:hover {
+    font-size: 20px;
+  }
+  .content1 {
+    width: 80%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .btn {
+    margin-top: 2vh;
+    height: 4vh;
+    margin-bottom: 1vh;
+  }
+  .plans_cont {
+    height: 50vh;
+  }
+}
+@media (max-width: 1200px) {
+  .navbar {
+    height: 8vh;
+  }
+  .logo_img {
+    height: 8vh;
+  }
+  .about_us {
+    height: 52vh;
+  }
+  #para {
+    font-size: 20px;
+  }
+  .about_us_1 img {
+    display: none;
+    position: absolute;
+  }
+  .about_us_1 {
+    display: none;
+    position: absolute;
+  }
+  .about_us_2 {
+    width: 100vw;
+  }
+  .test1 p,
+  .test2 p {
+    font-size: 25px;
+  }
+  .content1 {
+    width: 80%;
+  }
+  .art {
+    width: 30vw;
+    height: 28vh;
+    margin-right: 1vw;
+  }
+  .box {
+    width: 30vw;
+    height: 40vh;
+    margin-right: 1vw;
+  }
+}
+@media (max-width: 600px) {
+  .articles_info {
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .art {
+    width: 80%;
+    margin: 20px 0px 10px 0px;
+  }
+  .pricing {
+    flex-direction: column;
+    /* border:2px solid black; */
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .box {
+    width: 80%;
+    margin: 20px 0px 10px 0px;
+  }
+
+  .plans_cont {
+    height: auto;
+  }
+
+  .content1 {
+    /* border:2px solid magenta; */
+    height: 60%;
+  }
+
+  .test1,
+  .test2 {
+    width: 90%;
+  }
+  .test1 p,
+  .test2 p {
+    font-size: 20px;
+  }
+
+  #submit_bt {
+    margin-left: -10px;
+  }
+
+  .form_elements input {
+    width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  /* .logo_cont{
+            display:none;
+        } */
+  .content1 {
+    height: 70%;
+  }
+
+  .form_fields {
+    height: 70%;
+  }
+
+  .form_elements {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #submit_bt {
+    margin: 0px 0px 0px 100px;
+  }
+
+  .types li {
+    font-size: 12px;
+  }
+  .box {
+    height: 45vh;
+  }
+  .art {
+    height: 37vh;
+  }
+}
+
+/* responsive navbar for the website */
+.navbar .icon {
+  margin-right: 16px;
+  position: absolute;
+  display: none;
+  top: 2vh;
+  right: 0;
+}
+.nav-title {
+  display: none;
+}
+.rowing {
+  display: flex;
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 500px) {
+  .nav-title {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    font-weight: bold;
+  }
+  .topnav {
+    display: flex;
+  }
+  .logo_cont {
+    display: none;
+  }
+  .topnav a {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .navbar {
+    height: auto;
+    display: flex;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 500px) {
+  .rowing {
+    display: flex;
+    margin-top: 1vh;
+    /* border:1px solid red; */
+    justify-content: center;
+  }
+  .navbar {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+  }
+  .navbar ul {
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: flex;
+    flex-direction: row;
+    /* text-align: left;
+          margin-top: 20px; */
+  }
+}
